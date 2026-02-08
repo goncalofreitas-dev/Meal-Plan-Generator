@@ -95,3 +95,18 @@ O sistema não espera que o modelo se auto-corrija sozinho.
 - **Robustez:** Essa abordagem garante confiabilidade mesmo utilizando modelos menores e mais baratos.
 
 ---
+
+## Observability with LangSmith
+
+The system integrates LangSmith to provide full observability over the LangGraph execution.
+
+![LangGraph Execution Trace](assets/langsmith_execution_graph.png)
+
+The trace shows the complete generation–validation–retry workflow, including:
+
+- multiple LLM generation attempts
+- deterministic validation and safety checks
+- bounded retries
+- per-step latency visibility
+
+This confirms the robustness of the architecture and its ability to operate reliably with a Small Language Model.
