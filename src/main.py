@@ -3,7 +3,11 @@ from src.graph.graph import build_graph
 from src.data.loaders import load_jsonl
 from src.data.writers import save_output
 
+import os
+
 load_dotenv()
+
+os.environ["LANGSMITH_TRACING"] = "true"
 
 PATIENTS_PATH = "input_nutri_approval.jsonl"
 FOOD_LISTS_PATH = "input_lists.jsonl"
