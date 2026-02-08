@@ -1,14 +1,3 @@
-def validate_meal_totals(plan: dict) -> list[str]:
-    """
-    Checks if meal_totals match the sum of item macros.
-    (Placeholder: assumes LLM already provides correct meal totals)
-    """
-    # Neste challenge, os valores dos itens não vêm detalhados por macro,
-    # apenas os totais por refeição.
-    # Logo, esta validação será estrutural por agora.
-    return []
-
-
 def validate_daily_totals(plan: dict) -> list[str]:
     """
     Checks if daily_totals equal the sum of all meal_totals.
